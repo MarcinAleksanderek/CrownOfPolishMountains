@@ -3,11 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Crown Of Polish Mountains</title>
+	<link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+	<link rel="stylesheet" type="text/css" href="vendor/flickity.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
 </head>
 <body>
 	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script src="js/script.js"></script>
+		<div class="main-carousel">
+				<div class="carousel-cell" id="Rysy">
+					<div class="container IMG1">
+						<h1>Jobs fill your pockets, but adventures fill your soul.</h1>
+					</div>
+				</div>
+				<div class="carousel-cell" id="Sniezka">
+					<div class="container IMG2">
+						<h1>Spontaneity is the best kind of adventure</h1>
+					</div>
+				</div>
+				<div class="carousel-cell" id="Babia_Gora">
+					<div class="container IMG3">
+						<h1>Life was meant for good friends and great adventures</h1>
+					</div>
+				</div>
+				<div class="carousel-cell" id="Giewont">
+					<div class="container IMG4">
+						<h1>Then one day, when you least expect it, the great adventure finds you.</h1>
+					</div>
+				</div>
+				<div class="carousel-cell" id="Inna">
+					<div class="container IMG5">
+						<h1>Adventure Awaits, Go find it.</h1>
+					</div>
+				</div>
+				
+		</div>
+		<div class="standard_container">
+			<div class="progress-bar"></div>
+		</div>
+		<div class="standard_container">
+			<button id="restart">RESTART</button>
+		</div>
+		<div class="standard_container">
+			<div id="map"></div>
+		</div>
+<script src="./vendor/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+<script src="./js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJizYgOpTo5ip9UeXSg8dM94ENxSec3KE&callback=initMap"></script>
 </body>
 </html>

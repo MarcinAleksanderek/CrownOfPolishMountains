@@ -1,0 +1,73 @@
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  min-height: 250px;
+  height: 50vh;
+  /* height of carousel */
+  margin-right: 10px; }
+
+.container {
+  max-width: 1200px;
+  min-height: 250px;
+  height: 50vh;
+  /* height of carousel */
+  margin: 0 auto;
+  background-size: cover;
+  background-position-x: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .container h1 {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    background: rgba(10, 74, 148, 0.8);
+    color: white;
+    padding: 12px; }
+  .container.IMG1 {
+    background: url("../images/1.png"); }
+  .container.IMG2 {
+    background: url("../images/2.png"); }
+  .container.IMG3 {
+    background: url("../images/3.png"); }
+  .container.IMG4 {
+    background: url("../images/4.png"); }
+  .container.IMG5 {
+    background: url("../images/5.png"); }
+
+#restart {
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  background: #0a4a94; }
+  #restart:hover {
+    background: #2362aa; }
+
+.progress-bar {
+  height: 4px;
+  width: 0;
+  background: #770808; }
+
+.standard_container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+
+@media (min-width: 1200px) {
+  .standard_container {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto; } }
+#map {
+  height: 300px;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

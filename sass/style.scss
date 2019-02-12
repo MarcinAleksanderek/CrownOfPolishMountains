@@ -1,0 +1,86 @@
+.carousel-cell {
+  width: 100%; /* full width */
+  min-height: 250px;
+  height: 50vh; /* height of carousel */
+  margin-right: 10px;
+}
+
+.container{
+  max-width: 1200px;
+  min-height: 250px;
+  height: 50vh; /* height of carousel */
+  margin: 0 auto;
+  background-size: cover;
+  background-position-x: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & h1{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    background: rgba(10, 74, 148, 0.8);
+    color: white;
+    padding: 12px;
+  }
+
+  &.IMG1{
+    background: url('../images/1.png');
+  }
+  &.IMG2{
+    background: url('../images/2.png');
+  }
+  &.IMG3{
+    background: url('../images/3.png');
+  }
+  &.IMG4{
+    background: url('../images/4.png');
+  }
+  &.IMG5{
+    background: url('../images/5.png');
+  }
+}
+
+#restart {
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  cursor: pointer;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  background: rgb(10, 74, 148);
+  &:hover{
+    background: rgb(35, 98, 170);
+  }
+}
+
+
+.progress-bar {
+  height: 4px;
+  width: 0;
+  background: rgb(119, 8, 8);
+}
+
+.standard_container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media(min-width: 1200px) {
+  .standard_container {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+#map {
+	height: 300px;
+	width: 100%;
+}
