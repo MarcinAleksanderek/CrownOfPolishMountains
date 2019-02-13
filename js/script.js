@@ -18,6 +18,48 @@ window.initMap = function() {
 })();  
 
 
+// Use Mustashe to insert array of objects as slides
+var slides = [
+  {
+    id: 'Rysy',
+    url: './images/1.png',
+    slogan: 'Jobs fill your pockets, but adventures fill your soul.'
+  },
+  {
+    id: 'Sniezka',
+    url: './images/2.png',
+    slogan: 'Spontaneity is the best kind of adventure'
+  },
+  {
+    id: 'Babia_Gora',
+    url: './images/3.png',
+    slogan: 'Life was meant for good friends and great adventures'
+  },
+  {
+    id: 'Giewont',
+    url: './images/4.png',
+    slogan: 'Then one day, when you least expect it, the great adventure finds you.'
+  },
+  {
+    id: 'Snieznik',
+    url: './images/5.png',
+    slogan: 'Adventure Awaits, Go find it.'
+  },
+]
+
+var slideList = document.getElementById('mountain-slide-list').innerHTML;
+var results = document.getElementById('carousel');
+var listItems = '';
+
+for (var i = 0; i < slides.length; i++){
+  console.log(slides);
+  listItems += Mustache.render(slideList, slides[i]);
+}
+
+results.insertAdjacentHTML('beforeend', listItems);
+
+
+
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options

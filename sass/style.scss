@@ -16,27 +16,12 @@
   align-items: center;
   justify-content: center;
   & h1{
+    font-size: 2em;
     text-align: center;
     font-family: 'Poiret One', cursive;
     background: rgba(10, 74, 148, 0.8);
     color: white;
     padding: 12px;
-  }
-
-  &.IMG1{
-    background: url('../images/1.png');
-  }
-  &.IMG2{
-    background: url('../images/2.png');
-  }
-  &.IMG3{
-    background: url('../images/3.png');
-  }
-  &.IMG4{
-    background: url('../images/4.png');
-  }
-  &.IMG5{
-    background: url('../images/5.png');
   }
 }
 
@@ -59,7 +44,6 @@
   }
 }
 
-
 .progress-bar {
   height: 4px;
   width: 0;
@@ -77,6 +61,15 @@
     width: 1200px;
     position: relative;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 768px) {
+  .container{
+    & h1{
+      font-size: 1.5em;
+      max-width: 50%;
+    }
   }
 }
 
