@@ -95,13 +95,13 @@ flkty.on( 'scroll', function( progress ) {
     }
 
     map.panTo(Snieznik);
-		map.setZoom(6);
+    map.setZoom(6);
   }
   })();
 
-function	smoothPanAndZoom (map, zoom, coords){
+function smoothPanAndZoom (map, zoom, coords){
     var jumpZoom = zoom - Math.abs(map.getZoom() - zoom);
-		jumpZoom = Math.min(jumpZoom, zoom -1);
+    jumpZoom = Math.min(jumpZoom, zoom -1);
     jumpZoom = Math.max(jumpZoom, 3);
     
 		smoothZoom(map, jumpZoom, function(){
